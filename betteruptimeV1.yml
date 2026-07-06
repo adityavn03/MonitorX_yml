@@ -67,7 +67,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: adityavn03/betterstack1-backend:1b3904899bf3e91180b1677dab90194c8bae17c8
+          image: adityavn03/betterstack1-backend:4de6d669a0e6aa3747ae39b26b1ea726a40f2056
           imagePullPolicy: Always
           ports:
             - containerPort: 3001
@@ -125,7 +125,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: adityavn03/betterstack1-web:1b3904899bf3e91180b1677dab90194c8bae17c8
+          image: adityavn03/betterstack1-web:4de6d669a0e6aa3747ae39b26b1ea726a40f2056
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -201,7 +201,7 @@ spec:
     spec:
       containers:
         - name: pusher
-          image: adityavn03/betterstack1-pusher:1b3904899bf3e91180b1677dab90194c8bae17c8
+          image: adityavn03/betterstack1-pusher:4de6d669a0e6aa3747ae39b26b1ea726a40f2056
           imagePullPolicy: Always
           env:
             - name: NODE_OPTIONS
@@ -237,7 +237,7 @@ spec:
     spec:
       containers:
         - name: worker
-          image: adityavn03/betterstack1-worker:1b3904899bf3e91180b1677dab90194c8bae17c8
+          image: adityavn03/betterstack1-worker:4de6d669a0e6aa3747ae39b26b1ea726a40f2056
           imagePullPolicy: Always
           env:
             - name: NODE_OPTIONS
