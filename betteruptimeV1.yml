@@ -3,20 +3,7 @@ kind: Namespace
 metadata:
   name: betterstack
 ---
-apiVersion: v1
-kind: Secret
-metadata:
-  name: betterstack-secrets
-  namespace: betterstack
-type: Opaque
-stringData:
-  DATABASE_URL: "REPLACE_WITH_DATABASE_URL"
-  JWT_SECRET: "REPLACE_WITH_BACKEND_JWT_SECRET"
-  NEXTAUTH_URL: "http://a24606d4123214fa996f222bd8488440-254637953.ap-south-1.elb.amazonaws.com"
-  NEXTAUTH_SECRET: "REPLACE_WITH_NEXTAUTH_SECRET"
-  GOOGLE_CLIENT_ID: "REPLACE_WITH_GOOGLE_CLIENT_ID"
-  GOOGLE_CLIENT_SECRET: "REPLACE_WITH_GOOGLE_CLIENT_SECRET"
----
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
